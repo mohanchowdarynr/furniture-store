@@ -1,10 +1,10 @@
 import Home from './Home';
-import About from './About';
-import Checkout from './Checkout';
+import AboutPage from './AboutPage';
+import CheckoutPage from './CheckoutPage';
 import Cart from './Cart';
-import Error from './Error';
+import ErrorPage from './ErrorPage';
 import Products from './Products';
 import SingleProduct from './SingleProduct';
 import PrivateRoute from './PrivateRoute';
 
-export {Home,About,Cart,Checkout,Error,SingleProduct,Products,PrivateRoute};
+export {Home,AboutPage,Cart,CheckoutPage,ErrorPage,SingleProduct,Products,PrivateRoute};

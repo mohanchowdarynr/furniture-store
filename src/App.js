@@ -6,9 +6,9 @@ import {
   Home,
   SingleProduct,
   Cart,
-  Checkout,
-  Error,
-  About,
+  CheckoutPage,
+  ErrorPage,
+  AboutPage,
   Products,
   PrivateRoute
 } from './pages'
@@ -23,7 +23,7 @@ function App() {
             <Home />
           </Route>
           <Route exact path='/about'>
-            <About />
+            <AboutPage />
           </Route>
           <Route exact path='/cart'>
             <Cart />
@@ -33,10 +33,10 @@ function App() {
           </Route>
           <Route exact path='/products/:id' children={<SingleProduct />} />
           <PrivateRoute exact path='/checkout'>
-            <Checkout />
+            <CheckoutPage />
           </PrivateRoute>
           <Route path='*'>
-            <Error />
+            <ErrorPage />
           </Route>
         </Switch>
         <Footer />
