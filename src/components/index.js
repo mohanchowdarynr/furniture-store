@@ -5,4 +5,10 @@ import PageHero from "./PageHero"
 import Hero from "./Hero"
 import Services from "./Services"
 import Contact from "./Contact"
-export { Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact }
+import FeaturedProducts from "./FeaturedProducts"
+import ProductImages from "./ProductImages"
+import Error from "./Error"
+import Loading from "./Loading"
+import Stars from './Stars'
+import AddToCart from "./AddToCart"
+export { AddToCart,Stars,Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact,FeaturedProducts,ProductImages,Error,Loading }

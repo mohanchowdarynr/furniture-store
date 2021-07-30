@@ -4,7 +4,7 @@ import CheckoutPage from './CheckoutPage';
 import Cart from './Cart';
 import ErrorPage from './ErrorPage';
 import Products from './Products';
-import SingleProduct from './SingleProduct';
+import SingleProductPage from './SingleProductPage';
 import PrivateRoute from './PrivateRoute';
 
-export {Home,AboutPage,Cart,CheckoutPage,ErrorPage,SingleProduct,Products,PrivateRoute};
+export {Home,AboutPage,Cart,CheckoutPage,ErrorPage,SingleProductPage,Products,PrivateRoute};

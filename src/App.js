@@ -4,7 +4,7 @@ import { Navbar, Sidebar, Footer } from './components'
 
 import {
   Home,
-  SingleProduct,
+  SingleProductPage,
   Cart,
   CheckoutPage,
   ErrorPage,
@@ -31,7 +31,7 @@ function App() {
           <Route exact path='/products'>
             <Products />
           </Route>
-          <Route exact path='/products/:id' children={<SingleProduct />} />
+          <Route exact path='/products/:id' children={<SingleProductPage />} />
           <PrivateRoute exact path='/checkout'>
             <CheckoutPage />
           </PrivateRoute>
