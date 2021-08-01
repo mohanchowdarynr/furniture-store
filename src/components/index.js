@@ -11,4 +11,9 @@ import Error from "./Error"
 import Loading from "./Loading"
 import Stars from './Stars'
 import AddToCart from "./AddToCart"
-export { AddToCart,Stars,Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact,FeaturedProducts,ProductImages,Error,Loading }
+import Filters from "./Filters"
+import Sort from "./Sort"
+import ProductList from "./ProductList"
+
+
+export {Filters,Sort,ProductList,AddToCart,Stars,Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact,FeaturedProducts,ProductImages,Error,Loading }
