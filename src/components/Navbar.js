@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import CartButtons from './CartButtons'
 
 const Nav = () => {
-    
     return (
       <NavContainer>
         <div className='nav-center'>
