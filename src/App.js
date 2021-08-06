@@ -5,7 +5,7 @@ import { Navbar, Sidebar, Footer } from './components'
 import {
   Home,
   SingleProductPage,
-  Cart,
+  CartPage,
   CheckoutPage,
   ErrorPage,
   AboutPage,
@@ -26,7 +26,7 @@ function App() {
             <AboutPage />
           </Route>
           <Route exact path='/cart'>
-            <Cart />
+            <CartPage />
           </Route>
           <Route exact path='/products'>
             <ProductsPage />

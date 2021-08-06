@@ -14,6 +14,7 @@ import AddToCart from "./AddToCart"
 import Filters from "./Filters"
 import Sort from "./Sort"
 import ProductList from "./ProductList"
+import CartContent from "./CartContent"
 
 
-export {Filters,Sort,ProductList,AddToCart,Stars,Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact,FeaturedProducts,ProductImages,Error,Loading }
+export {Filters,Sort,CartContent,ProductList,AddToCart,Stars,Footer,Navbar,Sidebar,PageHero,Hero,Services,Contact,FeaturedProducts,ProductImages,Error,Loading }
