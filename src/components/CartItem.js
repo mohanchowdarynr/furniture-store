@@ -149,7 +149,7 @@ const Wrapper = styled.article`
     align-items: center;
     grid-template-rows: 75px;
     img {
-      height: 100%;
+      height: 80%;
     }
     .title {
       height: 100%;
