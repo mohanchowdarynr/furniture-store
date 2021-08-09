@@ -5,9 +5,18 @@ import App from './App';
 import { ProductsProvider } from './context/products_context';
 import { FilterProvider } from './context/filter_context';
 import { CartProvider } from './context/cart_context';
-
+import { Auth0Provider } from '@auth0/auth0-react';
+import { UserProvider } from './context/user_context'
+// dev-cvrstbrh.us.auth0.com
+// RWKY5IrgpALbuGg0iFEi12mwOlsF4MxR
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider
+  domain='dev-cvrstbrh.us.auth0.com'
+  clientId='RWKY5IrgpALbuGg0iFEi12mwOlsF4MxR'
+  redirectUri={window.location.origin}
+  cacheLocation='localstorage'
+>
+<UserProvider>
     <ProductsProvider>
      <FilterProvider>
        <CartProvider>
@@ -15,7 +24,8 @@ ReactDOM.render(
        </CartProvider>
       </FilterProvider>
     </ProductsProvider>
-  </React.StrictMode>,
+    </UserProvider>
+    </Auth0Provider>,
   document.getElementById('root')
 );
 

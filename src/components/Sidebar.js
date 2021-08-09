@@ -6,12 +6,12 @@ import { FaTimes } from 'react-icons/fa'
 import { links } from '../utils/constants'
 import styled from 'styled-components'
 import CartButtons from './CartButtons'
-// import { useUserContext } from '../context/user_context'
+import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
-  const { openSidebar, closeSidebar }  = useProductsContext;
-  // console.log(data);
-  const isSidebarOpen = true;
+  const { isSidebarOpen, closeSidebar } = useProductsContext()
+  const { myUser } = useUserContext()
+
   return (
     <SidebarContainer>
       <aside
@@ -19,7 +19,7 @@ const Sidebar = () => {
       >
         <div className='sidebar-header'>
           <img src={logo} className='logo' alt='comfy sloth' />
-          <button className='close-btn' type='button' onClick={openSidebar}>
+          <button className='close-btn' type='button' onClick={closeSidebar}>
             <FaTimes />
           </button>
         </div>
@@ -27,19 +27,19 @@ const Sidebar = () => {
           {links.map(({ id, text, url }) => {
             return (
               <li key={id}>
-                <Link to={url} >
+                <Link to={url} onClick={closeSidebar}>
                   {text}
                 </Link>
               </li>
             )
           })}
-          {/* {myUser && ( */}
+          {myUser && (
             <li>
-              <Link to='/checkout' >
+              <Link to='/checkout' onClick={closeSidebar}>
                 checkout
               </Link>
             </li>
-          {/* )} */}
+          )}
         </ul>
         <CartButtons />
       </aside>
