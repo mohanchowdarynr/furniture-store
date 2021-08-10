@@ -147,9 +147,10 @@ const Wrapper = styled.article`
     }
     grid-template-columns: 1fr 1fr 1fr 1fr auto;
     align-items: center;
-    grid-template-rows: 75px;
+    grid-template-rows: 95px;
     img {
       height: 80%;
+      margin-bottom: 10px
     }
     .title {
       height: 100%;
