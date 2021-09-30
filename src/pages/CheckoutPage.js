@@ -5,14 +5,17 @@ import { PageHero } from '../components'
 // extra imports
 import { useCartContext } from '../context/cart_context'
 import { Link } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const CheckoutPage = () => {
   const [status,setStatus] = useState(false);
-  const { cart } = useCartContext()
+  const { cart,clearCart } = useCartContext()
+
   const notify = () =>{
-   toast("Order Placed");
+   toast.success("Order Placed");
    setStatus(true);
+   clearCart();
   }
   return (
     <main>
@@ -28,7 +31,6 @@ const CheckoutPage = () => {
         ) : (
           <div>
           <button onClick={notify}>{status ? "Order Placed" : "Place Order"}</button>
-        <ToastContainer />
         </div>
         )}
       </Wrapper>
